@@ -6,4 +6,6 @@ edition = "2021"
 [dependencies]
 strum = "0.26.3"
 strum_macros = "0.26.4"
+memorable-wordlist = "0.1.7"
+rand = "0.8.5"
 

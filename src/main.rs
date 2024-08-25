@@ -10,9 +10,6 @@ struct Integer  {
 
 fn main() {
 
-
-    for state in hangman::State::iter(){
-        println!("{}", state.toString());
-    }
+    hangman::random_word();
 
 }
