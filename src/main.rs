@@ -1,5 +1,7 @@
+use strum::IntoEnumIterator;
 mod rock_paper_scissors;
 mod fibonnaci;
+mod hangman;
 
 #[derive(Debug)]
 struct Integer  {
@@ -9,12 +11,8 @@ struct Integer  {
 fn main() {
 
 
-    rock_paper_scissors::play();
-
-    let n:Integer = Integer { value:10 };
-    let fibo = fibonnaci::recursive(n);
-
-    println!("{:?}",n);
-    println!("{}", fibo);
+    for state in hangman::State::iter(){
+        println!("{}", state.toString());
+    }
 
 }

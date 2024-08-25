@@ -2,6 +2,8 @@ use crate::Integer;
 
 pub(crate) fn recursive(n : Integer) -> i32 {
 
+    // types non-implementing the copy trait can only be consumed once,
+    // so this function will not compile if using twice the n : Integer object
     if n.value == 0 { return 0; }
     if n.value == 1 { return 1; }
 
