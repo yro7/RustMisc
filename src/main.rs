@@ -10,6 +10,5 @@ struct Integer  {
 
 fn main() {
 
-    hangman::random_word();
-
+    hangman::play();
 }
